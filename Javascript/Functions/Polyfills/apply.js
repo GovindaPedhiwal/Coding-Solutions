@@ -16,7 +16,7 @@ const temp = {
 }
 
 // creating temporary symbol inside object and then calling it
-Function.prototype.customApplyVariant1 = function(context, ...args) {
+Function.prototype.customApplyVariant1 = function(context, args) {
     if(typeof this !== 'function')
         throw new Error(this + 'is not a function')
     if(context == null || context == undefined) {
@@ -62,11 +62,11 @@ Function.prototype.customApplyVariant2 = function(context, args) {
 info.customApplyVariant1(temp, [11,33,55]);
 info.customApplyVariant1("Hello", [11,33,55]);
 info.customApplyVariant1(temp);
-info.customApplyVariant1(temp, 24,11);
+// info.customApplyVariant1(temp, 24,11);
 info.customApplyVariant2(temp, [11,33,55]);
 info.customApplyVariant2("Hello", [11,33,55]);
 info.customApplyVariant2(temp);
-info.customApplyVariant2(temp, 24,11);
+// info.customApplyVariant2(temp, 24,11);
 
 // points to note:
 // it only accepts array or no value

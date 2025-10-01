@@ -1,0 +1,15 @@
+| Method                           | Returns string keys? | Returns symbol keys? | Includes non-enumerable? |
+|----------------------------------|----------------------|-----------------------|---------------------------|
+| **Object.keys(obj)**             | ✅ Yes               | ❌ No                 | ❌ Only enumerable        |
+| **Object.getOwnPropertyNames(obj)** | ✅ Yes            | ❌ No                 | ✅ All string keys        |
+| **Object.getOwnPropertySymbols(obj)** | ❌ No            | ✅ Yes                | ✅ All symbol keys        |
+| **Reflect.ownKeys(obj)**         | ✅ Yes               | ✅ Yes                | ✅ All keys (string + symbol) |
+
+
+This behaviour
+1) Arrow function => this comes from lexical scope where it has been created
+    example => In event Emitter subscribe method it returns an object with release method. So arrow function is attached
+    with release method. Inside the method this is giving reference of lexical scope where it was created. It's inside
+    subscribe method so that reference is coming.
+2) Regular function => this is dynamic here, dependends on how call happens
+    example => When a function is called on an object then that object reference will be considered inside regular function.

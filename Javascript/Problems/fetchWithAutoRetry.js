@@ -5,7 +5,7 @@ function fetchWithAutoRetryVariant1(fetcher, count) {
             console.log(resp)
         } catch(error) {
             console.log(error)
-            fetchWithAutoRetry(fetcher, count - 1);
+            fetchWithAutoRetryVariant1(fetcher, count - 1);
         }
         
     }

@@ -13,3 +13,10 @@ This behaviour
     subscribe method so that reference is coming.
 2) Regular function => this is dynamic here, dependends on how call happens
     example => When a function is called on an object then that object reference will be considered inside regular function.
+
+Below shortcut works
+this is for new polyfill
+let newObj = {}
+    Object.setPrototypeOf(newObj, constructorFnc.prototype);
+    OR
+let newObj = Object.create(constructorFnc.prototype)

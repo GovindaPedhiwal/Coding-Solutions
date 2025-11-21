@@ -1,0 +1,15 @@
+.traffic_lights {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 50px;
+}
+.light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+.light.active {
+    opacity: 1;
+}

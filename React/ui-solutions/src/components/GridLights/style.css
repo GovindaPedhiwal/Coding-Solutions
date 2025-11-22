@@ -1,0 +1,20 @@
+.grid-lights {
+    margin-left: 200px;
+}
+.grid-row {
+    display: flex;
+}
+.grid-col {
+    border: 1px solid black;
+    padding: 40px;
+    margin: 2px;
+}
+.grid-col.on {
+    background-color: green;
+}
+.grid-col.off {
+    background-color: red;
+}
+.grid-col.selected {
+    background-color: pink;
+}

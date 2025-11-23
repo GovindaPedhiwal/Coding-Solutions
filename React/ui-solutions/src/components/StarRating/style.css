@@ -1,0 +1,10 @@
+.star {
+    fill: lightgray;
+    transition: fill 0.4s ease;
+}
+.star.hover {
+    fill: purple !important;
+}
+.star.selected {
+    fill: darkblue;
+}

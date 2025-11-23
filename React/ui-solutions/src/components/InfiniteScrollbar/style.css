@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.lists {
+    width: 480px;
+    height: 400px;
+    overflow-y: scroll;
+    background-color: pink;
+}
+.list-item, .loading {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+    border-bottom: 1px solid black;
+}

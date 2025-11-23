@@ -1,4 +1,6 @@
 import GridLightsWrapper from "./components/GridLights/GridLightsWrapper"
+import InfiniteScrollbarWrapper from "./components/InfiniteScrollbar/InfiniteScrollbarWrapper"
+import StarRatingWrapper from "./components/StarRating/StarRatingWrapper"
 import LightWrapper from "./components/TrafficLights/LightWrapper"
 
 function App() {
@@ -6,6 +8,8 @@ function App() {
     <div>
       {/* <LightWrapper /> */}
       {/* <GridLightsWrapper /> */}
+      {/* <StarRatingWrapper /> */}
+      {/* <InfiniteScrollbarWrapper /> */}
     </div>
   )
 }

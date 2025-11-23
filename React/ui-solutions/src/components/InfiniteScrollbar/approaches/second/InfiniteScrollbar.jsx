@@ -25,8 +25,9 @@ const InfiniteScrollbar = () => {
     const fetchData = () => {
         setIsLoading(true);
         setTimeout(() => {
-            let updatedList = [...list, ...new Array(30)];
-            setList(updatedList)
+            setList((prevList) => {
+                return [...prevList, ...new Array(30)]
+            })
             setIsLoading(false);
         }, 1000);
     }

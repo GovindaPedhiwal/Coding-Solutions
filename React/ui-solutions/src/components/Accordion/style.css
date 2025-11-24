@@ -1,0 +1,31 @@
+.accordion-lists {
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+    padding: 10px;
+}
+.open-icon, .close-icon {
+    cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+}
+.lists-item {
+    flex: 1;
+    margin: 2px;
+}
+.content {
+    height: 0px;
+    margin: 10px;
+    overflow: scroll;
+    transition: height 0.5s ease;
+}
+.content.open {
+    height: 100px;
+}

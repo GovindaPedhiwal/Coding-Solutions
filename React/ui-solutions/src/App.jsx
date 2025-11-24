@@ -1,3 +1,4 @@
+import AccordionWrapper from "./components/Accordion/AccordionWrapper"
 import GridLightsWrapper from "./components/GridLights/GridLightsWrapper"
 import InfiniteScrollbarWrapper from "./components/InfiniteScrollbar/InfiniteScrollbarWrapper"
 import MemoryGameWrapper from "./components/MemoryGame/MemoryGameWrapper"
@@ -14,7 +15,7 @@ function App() {
       {/* <InfiniteScrollbarWrapper /> */}
       {/* <MemoryGameWrapper /> */}
       {/* <TabListWrapper /> */}
-      
+      <AccordionWrapper />
     </div>
   )
 }

@@ -1,0 +1,4 @@
+Edge Cases
+1) When change from one tab to another tab component mount and unmount
+so can't it be optimized
+2) Component being passed for each tab so what if it's lazy loading

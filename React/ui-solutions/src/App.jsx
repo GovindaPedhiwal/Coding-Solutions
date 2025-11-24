@@ -1,6 +1,8 @@
 import GridLightsWrapper from "./components/GridLights/GridLightsWrapper"
 import InfiniteScrollbarWrapper from "./components/InfiniteScrollbar/InfiniteScrollbarWrapper"
+import MemoryGameWrapper from "./components/MemoryGame/MemoryGameWrapper"
 import StarRatingWrapper from "./components/StarRating/StarRatingWrapper"
+import TabListWrapper from "./components/TabList/TabListWrapper"
 import LightWrapper from "./components/TrafficLights/LightWrapper"
 
 function App() {
@@ -10,6 +12,9 @@ function App() {
       {/* <GridLightsWrapper /> */}
       {/* <StarRatingWrapper /> */}
       {/* <InfiniteScrollbarWrapper /> */}
+      {/* <MemoryGameWrapper /> */}
+      {/* <TabListWrapper /> */}
+      
     </div>
   )
 }

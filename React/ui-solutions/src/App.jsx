@@ -4,6 +4,7 @@ import InfiniteScrollbarWrapper from "./components/InfiniteScrollbar/InfiniteScr
 import MemoryGameWrapper from "./components/MemoryGame/MemoryGameWrapper"
 import StarRatingWrapper from "./components/StarRating/StarRatingWrapper"
 import TabListWrapper from "./components/TabList/TabListWrapper"
+import TicTacToeWrapper from "./components/TicTacToe/TicTacToeWrapper"
 import LightWrapper from "./components/TrafficLights/LightWrapper"
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       {/* <InfiniteScrollbarWrapper /> */}
       {/* <MemoryGameWrapper /> */}
       {/* <TabListWrapper /> */}
-      <AccordionWrapper />
+      {/* <AccordionWrapper /> */}
+      {/* <TicTacToeWrapper /> */}
     </div>
   )
 }

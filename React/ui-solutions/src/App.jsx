@@ -1,4 +1,5 @@
 import AccordionWrapper from "./components/Accordion/AccordionWrapper"
+import AutoCompeteWrapper from "./components/AutoComplete/AutoCompeteWrapper"
 import GridLightsWrapper from "./components/GridLights/GridLightsWrapper"
 import InfiniteScrollbarWrapper from "./components/InfiniteScrollbar/InfiniteScrollbarWrapper"
 import MemoryGameWrapper from "./components/MemoryGame/MemoryGameWrapper"
@@ -18,6 +19,7 @@ function App() {
       {/* <TabListWrapper /> */}
       {/* <AccordionWrapper /> */}
       {/* <TicTacToeWrapper /> */}
+      <AutoCompeteWrapper />
     </div>
   )
 }

@@ -1,0 +1,10 @@
+In order to do animation kind of stuff or changing width dynamically
+it's recommended to use transform instead of width.
+
+Note => In a page there can be multiple sections like header, container and footer and all are part of one frame so when any change happens
+inside any container other containes also have to adjust so this is how painting happens. If change width of one container so other containers also have to adjust right.
+
+width => Whenever any change happens in container it paint the complete page so other
+elements also have to adjust accordingly which cause performance issues because it used only one frame for all blocks
+transform = In case of using transform if any change happens then it only adjust the block
+where changes happened so it creates another frame where this property being used and adjust over there

@@ -1,9 +1,11 @@
 import AccordionWrapper from "./components/Accordion/AccordionWrapper"
 import AutoCompeteWrapper from "./components/AutoComplete/AutoCompeteWrapper"
+import CarouselWrapper from "./components/Carousel/CarouselWrapper"
 import GridLightsWrapper from "./components/GridLights/GridLightsWrapper"
 import InfiniteScrollbarWrapper from "./components/InfiniteScrollbar/InfiniteScrollbarWrapper"
 import LightDarkThemeWrapper from "./components/LightDarkTheme/LightDarkThemeWrapper"
 import MemoryGameWrapper from "./components/MemoryGame/MemoryGameWrapper"
+import OTPWrapper from "./components/OTP/OTPWrapper"
 import ProgressBarWrapper from "./components/ProgressBar/ProgressBarWrapper"
 import StarRatingWrapper from "./components/StarRating/StarRatingWrapper"
 import SwitchWrapper from "./components/Switch/SwitchWrapper"
@@ -26,8 +28,9 @@ function App() {
       {/* <OTPWrapper /> */}
       {/* <ProgressBarWrapper /> */}
       {/* <SwitchWrapper /> */}
-      <LightDarkThemeWrapper />
-
+      {/* <LightDarkThemeWrapper /> */}
+      {/* <OTPWrapper /> */}
+      {/* <CarouselWrapper /> */}
     </div>
   )
 }

@@ -1,0 +1,18 @@
+.otps-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.otps {
+    display: flex;
+    gap: 10px;
+}
+.otp-field {
+    width: 80px;
+    height: 50px;
+}
+.otp-field input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 21px;
+}

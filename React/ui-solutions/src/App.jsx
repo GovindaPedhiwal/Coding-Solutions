@@ -6,6 +6,7 @@ import InfiniteScrollbarWrapper from "./components/InfiniteScrollbar/InfiniteScr
 import LightDarkThemeWrapper from "./components/LightDarkTheme/LightDarkThemeWrapper"
 import MemoryGameWrapper from "./components/MemoryGame/MemoryGameWrapper"
 import OTPWrapper from "./components/OTP/OTPWrapper"
+import OverlappingCircleWrapper from "./components/OverlappingCircle/OverlappingCircleWrapper"
 import ProgressBarWrapper from "./components/ProgressBar/ProgressBarWrapper"
 import StarRatingWrapper from "./components/StarRating/StarRatingWrapper"
 import SwitchWrapper from "./components/Switch/SwitchWrapper"
@@ -31,6 +32,7 @@ function App() {
       {/* <LightDarkThemeWrapper /> */}
       {/* <OTPWrapper /> */}
       {/* <CarouselWrapper /> */}
+      {/* <OverlappingCircleWrapper /> */}
     </div>
   )
 }

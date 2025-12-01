@@ -12,6 +12,7 @@ import StarRatingWrapper from "./components/StarRating/StarRatingWrapper"
 import SwitchWrapper from "./components/Switch/SwitchWrapper"
 import TabListWrapper from "./components/TabList/TabListWrapper"
 import TicTacToeWrapper from "./components/TicTacToe/TicTacToeWrapper"
+import TimerWrapper from "./components/DigitalClock/DigitalClockWrapper"
 import LightWrapper from "./components/TrafficLights/LightWrapper"
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       {/* <OTPWrapper /> */}
       {/* <CarouselWrapper /> */}
       {/* <OverlappingCircleWrapper /> */}
+      {/* <TimerWrapper /> */}
     </div>
   )
 }

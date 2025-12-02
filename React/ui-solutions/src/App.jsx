@@ -14,6 +14,9 @@ import TabListWrapper from "./components/TabList/TabListWrapper"
 import TicTacToeWrapper from "./components/TicTacToe/TicTacToeWrapper"
 import TimerWrapper from "./components/DigitalClock/DigitalClockWrapper"
 import LightWrapper from "./components/TrafficLights/LightWrapper"
+import PaginationWrapper from "./components/Pagination/PaginationWrapper"
+import PopOverWrapper from "./components/PopOver/PopOverWrapper"
+import ModalWrapper from "./components/Modal/ModalWrapper"
 
 function App() {
   return (
@@ -35,6 +38,9 @@ function App() {
       {/* <CarouselWrapper /> */}
       {/* <OverlappingCircleWrapper /> */}
       {/* <TimerWrapper /> */}
+      {/* <PaginationWrapper /> */}
+      {/* <PopOverWrapper /> */}
+      {/* <ModalWrapper /> */}
     </div>
   )
 }

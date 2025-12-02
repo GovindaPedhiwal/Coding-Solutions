@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #5a5a5a;
+    inset: 0;
+    z-index: 9999;
+}
+.container {
+    width: 550px;
+    height: fit-content;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    background-color: white;
+    position: fixed;
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid gray;
+}
+.modal-header .label {
+    font-size: 21px;
+}
+.modal-content {
+    padding: 6px 15px;
+}
+.modal-footer {
+    border-top: 1px solid gray;
+    padding: 10px 15px;
+}
+.close-btn {
+    cursor: pointer;
+}

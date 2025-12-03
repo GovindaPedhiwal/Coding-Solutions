@@ -19,6 +19,7 @@ import PopOverWrapper from "./components/PopOver/PopOverWrapper"
 import ModalWrapper from "./components/Modal/ModalWrapper"
 import StepperWrapper from "./components/Stepper/StepperWrapper"
 import VirtualizedListWrapper from "./components/VirtualizedList/VirtualizedWrapperList"
+import WhaleAMockWrapper from "./components/WhaleAMock/WhaleAMockWrapper"
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
       {/* <ModalWrapper /> */}
       {/* <StepperWrapper /> */}
       {/* <VirtualizedListWrapper /> */}
+      {/* <WhaleAMockWrapper /> */}
+      
     </div>
   )
 }

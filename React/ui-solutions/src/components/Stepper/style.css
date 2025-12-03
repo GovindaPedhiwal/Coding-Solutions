@@ -1,0 +1,46 @@
+.stepper-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.stepper-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.stepper-number {
+    background-color: gray;
+    height: 30px;
+    width: 30px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.stepper-number.active {
+    background-color: cadetblue;
+}
+.stepper-line {
+    width: 3px;
+    height: 100%;
+    background-color: gray;
+    position: absolute;
+    top: 30px;
+}
+.stepper-line.active {
+    background-color: brown;
+}
+.stepper-btns {
+    display: flex;
+    padding: 30px 0px;
+    gap: 30px;
+}
+.stepper-btns button {
+    cursor: pointer;
+}
+.stepper-btns .disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}

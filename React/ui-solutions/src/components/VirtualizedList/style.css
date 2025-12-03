@@ -1,0 +1,12 @@
+.virtualized-container {
+    background-color: gray;
+    overflow: auto;
+}
+.v-list {
+    position: relative;
+}
+.v-item {
+    width: 100%;
+    background-color: coral;
+    border-top: 5px solid gray;
+}

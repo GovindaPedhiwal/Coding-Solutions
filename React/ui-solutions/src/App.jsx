@@ -17,6 +17,8 @@ import LightWrapper from "./components/TrafficLights/LightWrapper"
 import PaginationWrapper from "./components/Pagination/PaginationWrapper"
 import PopOverWrapper from "./components/PopOver/PopOverWrapper"
 import ModalWrapper from "./components/Modal/ModalWrapper"
+import StepperWrapper from "./components/Stepper/StepperWrapper"
+import VirtualizedListWrapper from "./components/VirtualizedList/VirtualizedWrapperList"
 
 function App() {
   return (
@@ -41,6 +43,8 @@ function App() {
       {/* <PaginationWrapper /> */}
       {/* <PopOverWrapper /> */}
       {/* <ModalWrapper /> */}
+      {/* <StepperWrapper /> */}
+      {/* <VirtualizedListWrapper /> */}
     </div>
   )
 }

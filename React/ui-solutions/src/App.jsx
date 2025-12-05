@@ -20,6 +20,8 @@ import ModalWrapper from "./components/Modal/ModalWrapper"
 import StepperWrapper from "./components/Stepper/StepperWrapper"
 import VirtualizedListWrapper from "./components/VirtualizedList/VirtualizedWrapperList"
 import WhaleAMockWrapper from "./components/WhaleAMock/WhaleAMockWrapper"
+import TypingEffectWrapper from "./components/TypingEffect/TypingEffectWrapper"
+import SnakeGameWrapper from "./components/SnakeGame/SnakeGameWrapper"
 
 function App() {
   return (
@@ -47,7 +49,8 @@ function App() {
       {/* <StepperWrapper /> */}
       {/* <VirtualizedListWrapper /> */}
       {/* <WhaleAMockWrapper /> */}
-      
+      {/* <TypingEffectWrapper /> */}
+      {/* <SnakeGameWrapper /> */}
     </div>
   )
 }

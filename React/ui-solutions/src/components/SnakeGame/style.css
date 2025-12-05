@@ -1,0 +1,18 @@
+.snake-wrapper {
+    width: 500px;
+    border: 1px solid gray;
+}
+.snake-row {
+    display: flex;
+}
+.snake-col {
+    flex: 1;
+    padding: 15px;
+}
+.snake-col.active {
+    background-color: green;
+}
+.snake-col.food {
+    background-color: red;
+    border-radius: 50%;
+}

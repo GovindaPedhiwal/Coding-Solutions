@@ -22,6 +22,8 @@ import VirtualizedListWrapper from "./components/VirtualizedList/VirtualizedWrap
 import WhaleAMockWrapper from "./components/WhaleAMock/WhaleAMockWrapper"
 import TypingEffectWrapper from "./components/TypingEffect/TypingEffectWrapper"
 import SnakeGameWrapper from "./components/SnakeGame/SnakeGameWrapper"
+import IndeterminateCheckBoxWrapper from "./components/Indeterminate/IndeterminateCheckBoxWrapper"
+import NestedCommentsWrapper from "./components/NestedComments/Approach/Second/NestedCommentsWrapper"
 
 function App() {
   return (
@@ -51,6 +53,8 @@ function App() {
       {/* <WhaleAMockWrapper /> */}
       {/* <TypingEffectWrapper /> */}
       {/* <SnakeGameWrapper /> */}
+      {/* <IndeterminateCheckBoxWrapper /> */}
+      {/* <NestedCommentsWrapper /> */}
     </div>
   )
 }

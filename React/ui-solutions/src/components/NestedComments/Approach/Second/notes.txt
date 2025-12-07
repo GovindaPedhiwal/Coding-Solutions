@@ -1,0 +1,3 @@
+Here the data structure is different so on the basis of path all the operations are being performed
+such as adding and deleting comment.
+Optimizations wise it's good because on the basis of path traversal is happening.

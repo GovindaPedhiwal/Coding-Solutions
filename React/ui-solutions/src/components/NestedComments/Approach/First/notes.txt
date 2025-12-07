@@ -1,0 +1,2 @@
+Here the data structure is different so on the basis of recursion traversal happens and then operations are being performed
+such as adding and deleting comment.

@@ -1,0 +1,45 @@
+.nested-comments {
+    margin-left: 10px;
+}
+
+.comments-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-header {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+.comment-header button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.reply-comment-box textarea {
+    resize: none;
+    width: 430px;
+    height: 80px;
+}
+
+.reply-comment-btn button {
+    background-color: rgb(73, 162, 210);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.reply-comment {
+    margin-left: 12px;
+}
+
+.reply-btn {
+    color: green;
+}
+
+.delete-btn {
+    color: red;
+}

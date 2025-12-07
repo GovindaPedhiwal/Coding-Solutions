@@ -34,6 +34,7 @@ const CommentInfo = ({comment, handleComment, handleDeleteComment, path}) => {
 const NestedComments = ({nestedComments, handleComment, handleDeleteComment, path = ''}) => {
     return (
         <div className="nested-comments">
+            <div className='line'></div>
             {
                 nestedComments?.map((comment, idx) => {
                     return <div className="comments" key={idx}>

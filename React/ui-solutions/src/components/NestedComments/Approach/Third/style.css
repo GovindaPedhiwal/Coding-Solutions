@@ -1,32 +1,39 @@
-
-.nested-comments {
+.inner-comments {
     margin-left: 15px;
+}
+
+.inner-comments, .nested-comments {
     position: relative;
 }
-.nested-comments .line {
-    content: '';
+
+.nested-comments-list {
+    padding-left: 10px;
+}
+
+.line {
     position: absolute;
-    width: 1px;
-    background-color: purple;
-    top: 10px;
-    bottom: 10px;
+    width: 2px;
+    height: 100%;
+    background: purple;
 }
 
-.comments-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.comment-header {
+.comment-headers {
     display: flex;
     gap: 10px;
-    margin: 10px;
+    margin: 10px 0px;
 }
 
-.comment-header button {
+.reply-btn, .delete-btn {
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+.reply-btn {
+    color: green;
+}
+.delete-btn {
+    color: red;
 }
 
 .reply-comment-box textarea {
@@ -44,12 +51,4 @@
 }
 .reply-comment {
     margin-left: 12px;
-}
-
-.reply-btn {
-    color: green;
-}
-
-.delete-btn {
-    color: red;
 }

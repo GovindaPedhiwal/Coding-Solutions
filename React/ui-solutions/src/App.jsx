@@ -23,7 +23,7 @@ import WhaleAMockWrapper from "./components/WhaleAMock/WhaleAMockWrapper"
 import TypingEffectWrapper from "./components/TypingEffect/TypingEffectWrapper"
 import SnakeGameWrapper from "./components/SnakeGame/SnakeGameWrapper"
 import IndeterminateCheckBoxWrapper from "./components/Indeterminate/IndeterminateCheckBoxWrapper"
-import NestedCommentsWrapper from "./components/NestedComments/Approach/Second/NestedCommentsWrapper"
+import NestedCommentsWrapper from "./components/NestedComments/Approach/Third/NestedCommentsWrapper"
 
 function App() {
   return (

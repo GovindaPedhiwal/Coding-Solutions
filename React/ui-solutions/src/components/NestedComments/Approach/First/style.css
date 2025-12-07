@@ -1,5 +1,14 @@
 .nested-comments {
-    margin-left: 10px;
+    margin-left: 15px;
+    position: relative;
+}
+.nested-comments .line {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: purple;
+    top: 10px;
+    bottom: 10px;
 }
 
 .comments-info {

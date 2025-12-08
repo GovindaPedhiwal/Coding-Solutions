@@ -43,9 +43,23 @@ const NestedCommentsWrapper = () => {
 
         setCommentsData(cloneCommentsData);
     }
+
+    const handleEditComment = (value, id) => {
+        console.log(value)
+        let cloneCommentsData = structuredClone(commentsData);
+        cloneCommentsData[id].label = value;
+        setCommentsData(cloneCommentsData);
+    }
+
+    const handleExpandComment = (id, isExpanded) => {
+        let cloneCommentsData = structuredClone(commentsData);
+        cloneCommentsData[id].isExpanded = isExpanded;
+        setCommentsData(cloneCommentsData);
+    }
+
     return (
         <div>
-            <NestedComments comments={commentsData} handleComment={handleComment} handleDeleteComment={handleDeleteComment} />
+            <NestedComments comments={commentsData} handleComment={handleComment} handleDeleteComment={handleDeleteComment} handleEditComment={handleEditComment} handleExpandComment={handleExpandComment} />
         </div>
     )
 }

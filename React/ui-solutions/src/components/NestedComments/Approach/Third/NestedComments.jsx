@@ -3,18 +3,60 @@ import './style.css'
 import ReplyComment from './ReplyComment';
 
 
-const CommentInfo = ({comment, handleComment, handleDeleteComment}) => {
+const CommentInfo = ({comments, comment, handleComment, handleDeleteComment, handleEditComment, handleExpandComment}) => {
     const [replyCommentOpen, setReplyCommentOpen] = useState(false);
+    const [editCommentOpen, setEditCommentOpen] = useState(false);
+    const [editCommentValue, setEditCommentValue] = useState(comment?.label);
     
     const handleReplyComment = () => {
         setReplyCommentOpen(!replyCommentOpen);
     }
+
+    const handleEdit = () => {
+        setEditCommentOpen(!editCommentOpen);
+    }
+
+    const handleEditChange = (e) => {
+        setEditCommentValue(e.target.value);
+    }
     return <>
           <div className="comment-headers">
+                    {
+                      !comment?.isExpanded &&
+                    <button className='expand-btn' onClick={() => handleExpandComment(comment?.id, true)}>
+                      +
+                    </button>
+                    }
+                    {
+                      comment?.isExpanded &&
+                    <button className='non-expand-btn' onClick={() => handleExpandComment(comment?.id, false)}>
+                      -
+                    </button>
+                    }
                 <div>
-                    { comment?.label }
+                    { !editCommentOpen && comment?.label }
+                    {
+                        editCommentOpen && <div>
+                            <input type="text" value={editCommentValue} onChange={handleEditChange} />
+                        </div>
+                    }
                 </div>
                 <div className="comment-actions">
+                    {
+                        !editCommentOpen && <button className='edit-btn' onClick={handleEdit}>Edit</button>
+                    }
+                    {
+                        editCommentOpen && <button className='save-btn' onClick={() => { 
+                            setEditCommentOpen(false);
+                            handleEditComment(editCommentValue, comment?.id)}
+                        }>Save</button>
+                    }
+                    {
+                        editCommentOpen && <button className='cancel_btn' onClick={() => { 
+                            setEditCommentValue(comment?.label)
+                            setEditCommentOpen(false)} 
+                        }>Cancel</button>
+                    }
                     <button className='reply-btn' onClick={handleReplyComment}>
                         {
                             replyCommentOpen ? 'Cancel': 'Reply'
@@ -23,13 +65,18 @@ const CommentInfo = ({comment, handleComment, handleDeleteComment}) => {
                     <button className='delete-btn' onClick={() => handleDeleteComment(comment?.id)}>Delete</button>
                 </div>
             </div>
+            <div>
+                {
+                 comments[comment?.id]?.children?.length == 0 && comment?.isExpanded && <>No Comments</>
+                }
+            </div>
             {
                 replyCommentOpen && <ReplyComment id={comment?.id} setReplyCommentOpen={setReplyCommentOpen} handleComment={handleComment} />
             }
     </>
 }
 
-const List = ({comments, commentList, handleComment, handleDeleteComment}) => {
+const List = ({comments, commentList, handleComment, handleDeleteComment, handleEditComment, handleExpandComment}) => {
     console.log(commentList)
     return (
         <div className='inner-comments'>
@@ -39,9 +86,9 @@ const List = ({comments, commentList, handleComment, handleDeleteComment}) => {
                     const commentInfo = comments[commentId];
                     return <div className='nested-comments-list' key={commentId}>
                         <div className="comments-info">
-                            <CommentInfo comment={commentInfo} handleComment={handleComment} handleDeleteComment={handleDeleteComment} />
+                            <CommentInfo comments={comments} comment={commentInfo} handleComment={handleComment} handleDeleteComment={handleDeleteComment} handleEditComment={handleEditComment} handleExpandComment={handleExpandComment} />
                         </div>
-                        {!!commentInfo?.children?.length && <List comments={comments} handleComment={handleComment} handleDeleteComment={handleDeleteComment} commentList={commentInfo?.children} />}
+                        {commentInfo?.isExpanded && !!commentInfo?.children?.length && <List comments={comments} handleComment={handleComment} handleDeleteComment={handleDeleteComment} handleEditComment={handleEditComment} handleExpandComment={handleExpandComment} commentList={commentInfo?.children} />}
                     </div>
             })
             }
@@ -49,7 +96,7 @@ const List = ({comments, commentList, handleComment, handleDeleteComment}) => {
     )
 }
 
-const NestedComments = ({comments, handleComment, handleDeleteComment}) => {
+const NestedComments = ({comments, handleComment, handleDeleteComment, handleEditComment, handleExpandComment}) => {
     console.log(comments)
     return (
         <div className='nested-comments'>
@@ -61,10 +108,10 @@ const NestedComments = ({comments, handleComment, handleDeleteComment}) => {
                         return <div className='nested-comments-list' key={commentId}>
                             <div className="comment-headers">
                                    <div className="comments-info">
-                                        <CommentInfo comment={commentInfo} handleComment={handleComment} handleDeleteComment={handleDeleteComment} />
+                                        <CommentInfo comments={comments} comment={commentInfo} handleComment={handleComment} handleDeleteComment={handleDeleteComment} handleEditComment={handleEditComment} handleExpandComment={handleExpandComment} />
                                     </div>
                             </div>
-                            {!!commentInfo?.children?.length && <List comments={comments} handleComment={handleComment} handleDeleteComment={handleDeleteComment} commentList={commentInfo?.children} />}
+                            {commentInfo?.isExpanded && !!commentInfo?.children?.length && <List comments={comments} handleComment={handleComment} handleDeleteComment={handleDeleteComment} handleEditComment={handleEditComment} handleExpandComment={handleExpandComment} commentList={commentInfo?.children} />}
                         </div>
                     }
                 })

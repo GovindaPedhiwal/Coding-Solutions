@@ -19,16 +19,30 @@
 
 .comment-headers {
     display: flex;
+    align-items: center;
     gap: 10px;
     margin: 10px 0px;
 }
 
-.reply-btn, .delete-btn {
+.reply-btn, .delete-btn, .edit-btn, .save-btn, .cancel_btn, .expand-btn, .non-expand-btn {
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
 
+.expand-btn, .non-expand-btn {
+    font-size: 22px;
+}
+
+.edit-btn {
+    color: brown;
+}
+.save-btn {
+    color: purple;
+}
+.cancel_btn {
+    color: cadetblue;
+}
 .reply-btn {
     color: green;
 }

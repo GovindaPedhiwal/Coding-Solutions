@@ -25,6 +25,7 @@ import SnakeGameWrapper from "./components/SnakeGame/SnakeGameWrapper"
 import IndeterminateCheckBoxWrapper from "./components/Indeterminate/IndeterminateCheckBoxWrapper"
 import NestedCommentsWrapper from "./components/NestedComments/Approach/Third/NestedCommentsWrapper"
 import FileExplorerWrapper from "./components/FileExplorer/FileExplorerWrapper"
+import ToastWrapper from "./components/Toast"
 
 function App() {
   return (
@@ -57,6 +58,8 @@ function App() {
       {/* <IndeterminateCheckBoxWrapper /> */}
       {/* <NestedCommentsWrapper /> */}
       {/* <FileExplorerWrapper /> */}
+      <ToastWrapper />      
+
     </div>
   )
 }

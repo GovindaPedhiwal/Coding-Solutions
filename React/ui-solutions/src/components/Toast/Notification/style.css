@@ -1,0 +1,28 @@
+.notifications {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+.notifications-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.n-list {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    color: white;
+}
+.n-list.success {
+    background-color: green;
+}
+.n-list.error {
+    background-color: red;
+}
+.n-list.warning {
+    background-color: orange;
+}

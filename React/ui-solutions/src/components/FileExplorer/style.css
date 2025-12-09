@@ -1,0 +1,24 @@
+.file-explorer {
+    margin-left: 10px;
+}
+
+.f-e-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.new-folder {
+    margin-left: 24px;
+}
+.new-file {
+    margin-left: 24px;
+}
+.add-folder, .add-file, .save-new-folder, .delete-file {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.save-new-folder {
+    color: green;
+}

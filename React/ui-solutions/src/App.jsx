@@ -24,6 +24,7 @@ import TypingEffectWrapper from "./components/TypingEffect/TypingEffectWrapper"
 import SnakeGameWrapper from "./components/SnakeGame/SnakeGameWrapper"
 import IndeterminateCheckBoxWrapper from "./components/Indeterminate/IndeterminateCheckBoxWrapper"
 import NestedCommentsWrapper from "./components/NestedComments/Approach/Third/NestedCommentsWrapper"
+import FileExplorerWrapper from "./components/FileExplorer/FileExplorerWrapper"
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
       {/* <SnakeGameWrapper /> */}
       {/* <IndeterminateCheckBoxWrapper /> */}
       {/* <NestedCommentsWrapper /> */}
+      {/* <FileExplorerWrapper /> */}
     </div>
   )
 }

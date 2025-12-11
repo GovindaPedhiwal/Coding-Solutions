@@ -1,0 +1,46 @@
+h1 {
+    margin-left: 20px;
+}
+.sudoku-game {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 300px;
+    margin-left: 50px;
+    padding-top: 30px;
+}
+.s-g-row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.s-g-col {
+    border: 1px solid gray;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-g-row:nth-child(3n) .s-g-col {
+    border-bottom: 3px solid gray;
+}
+
+.s-g-row .s-g-col:nth-child(3n) {
+    border-right: 3px solid gray;
+}
+
+.s-g-row:first-child .s-g-col {
+    border-top: 3px solid gray;
+}
+.s-g-row .s-g-col:first-child {
+    border-left: 3px solid gray;
+}
+.s-g-col input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    text-align: center;
+}

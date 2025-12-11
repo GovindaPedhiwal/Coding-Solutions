@@ -27,6 +27,7 @@ import NestedCommentsWrapper from "./components/NestedComments/Approach/Third/Ne
 import FileExplorerWrapper from "./components/FileExplorer/FileExplorerWrapper"
 import ToastWrapper from "./components/Toast"
 import DragDropWrapper from "./components/DragDrop/Variations/Second/DragDropWrapper"
+import SudokuWrapper from "./components/Sudoku/SudokuWrapper"
 
 function App() {
   return (
@@ -60,7 +61,8 @@ function App() {
       {/* <NestedCommentsWrapper /> */}
       {/* <FileExplorerWrapper /> */}
       {/* <ToastWrapper /> */}
-      <DragDropWrapper />
+      {/* <DragDropWrapper /> */}
+      {/* <SudokuWrapper /> */}
     </div>
   )
 }

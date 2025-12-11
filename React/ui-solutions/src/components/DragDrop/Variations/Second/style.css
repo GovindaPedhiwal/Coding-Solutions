@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dragdrop-wrapper {
+    background-color: darkgray;
+    width: 300px;
+    padding: 3px;
+    margin: 10px 20px;
+}
+
+.d-d-item {
+    background-color: lightgray;
+    margin: 10px;
+    height: 30px;
+}

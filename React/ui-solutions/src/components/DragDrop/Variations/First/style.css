@@ -1,0 +1,18 @@
+.dragdrop {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 10px 20px;
+    width: 100%;
+    min-height: 300px;
+}
+.d-d-container {
+    width: 30%;
+}
+
+.d-d-item {
+    background-color: darkgray;
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+}

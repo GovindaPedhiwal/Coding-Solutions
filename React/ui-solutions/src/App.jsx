@@ -26,6 +26,7 @@ import IndeterminateCheckBoxWrapper from "./components/Indeterminate/Indetermina
 import NestedCommentsWrapper from "./components/NestedComments/Approach/Third/NestedCommentsWrapper"
 import FileExplorerWrapper from "./components/FileExplorer/FileExplorerWrapper"
 import ToastWrapper from "./components/Toast"
+import DragDropWrapper from "./components/DragDrop/Variations/Second/DragDropWrapper"
 
 function App() {
   return (
@@ -58,8 +59,8 @@ function App() {
       {/* <IndeterminateCheckBoxWrapper /> */}
       {/* <NestedCommentsWrapper /> */}
       {/* <FileExplorerWrapper /> */}
-      <ToastWrapper />      
-
+      {/* <ToastWrapper /> */}
+      <DragDropWrapper />
     </div>
   )
 }
